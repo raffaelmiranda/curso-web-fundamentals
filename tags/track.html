@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag track</title>
+  </head>
+  <body>
+    <video
+      src="arquivos/AV1_trailer.mp4"
+      width="600"
+      controls
+      loop
+      muted
+      preload
+      poster="arquivos/logo.png"
+    >
+      <track
+        src="arquivos/AV1_trailer_pt.vtt"
+        label="Português (Brasil)"
+        kind="subtitles"
+        srclang="pt"
+        default
+      />
+      <track
+        src="arquivos/AV1_trailer_jp.vtt"
+        label="Japonês"
+        kind="subtitles"
+        srclang="jp"
+      />
+    </video>
+  </body>
+</html>

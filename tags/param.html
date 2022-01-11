@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tag script</title>
+    <title>Tag param</title>
   </head>
   <body>
-    <script src="arquivos/script.js" defer></script>
-    <h1>Hello World</h1>
+    <object
+      data="object.pdf#page=3"
+      type="application/pdf"
+      width="800"
+      height="600"
+    >
+      <param name="page" value="3" />
+    </object>
   </body>
 </html>
