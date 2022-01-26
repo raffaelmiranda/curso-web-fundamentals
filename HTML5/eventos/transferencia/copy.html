@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event: copy</title>
+  </head>
+  <body>
+    <p oncopy="debug(event)">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, fuga
+      veniam voluptatem culpa necessitatibus in corrupti assumenda dolorem
+      molestias doloremque eligendi ipsam dolores! Dolorem beatae minima veniam
+      eveniet nemo perspiciatis.
+    </p>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, fuga
+      veniam voluptatem culpa necessitatibus in corrupti assumenda dolorem
+      molestias doloremque eligendi ipsam dolores! Dolorem beatae minima veniam
+      eveniet nemo perspiciatis.
+    </p>
+    <script>
+      function debug(e) {
+        console.log("Evento: " + e.type);
+      }
+    </script>
+  </body>
+</html>

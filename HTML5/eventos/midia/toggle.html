@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event: toggle</title>
+    <style>
+      video {
+        width: 80vh;
+      }
+    </style>
+  </head>
+  <body>
+    <details ontoggle="debug(event)">
+      <summary>Hcode</summary>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        sapiente dolorum debitis, soluta necessitatibus voluptatem aperiam
+        provident dolor ducimus odio commodi vero reprehenderit, nam eveniet,
+        repellat distinctio? Quidem, tempore odit!
+      </p>
+    </details>
+
+    <script>
+      function debug(e) {
+        console.log("Evento: " + e.type);
+      }
+    </script>
+  </body>
+</html>
