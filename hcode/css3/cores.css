@@ -1,0 +1,23 @@
+body {
+  background: green; /*Cores por nome: são 140 nomes de cores*/
+  background: rgb(red, green, blue); /*Cores por RGB*/
+  background: #00ff00; /*Cores por hexadecimal*/
+  background: hsl(
+    120,
+    100%,
+    50%
+  ); /*Cores por Hue - Saturation - Lightness (HSL)*/
+}
+
+/* TRANSPARENCIA*/
+body {
+  background: green; /*Cores por nome: são 140 nomes de cores*/
+  background: rgba(red, green, blue, 0.5); /*Cores por RGB*/
+  background: #00ff0050; /*Cores por hexadecimal*/
+  background: hsla(
+    120,
+    100%,
+    50%,
+    0.5
+  ); /*Cores por Hue - Saturation - Lightness (HSL)*/
+}

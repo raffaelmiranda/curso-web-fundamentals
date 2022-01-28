@@ -1,0 +1,29 @@
+#elemento1 {
+  background: red;
+  width: 250px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+#elemento2 {
+  background: red;
+  width: 250px;
+  height: 50px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+#elemento3 {
+  background: blue;
+  width: 250px;
+  height: 50px;
+  box-sizing: content-box;
+}
+
+#elemento4 {
+  background: blue;
+  width: 250px;
+  height: 50px;
+  padding: 0 50px;
+  box-sizing: content-box;
+}

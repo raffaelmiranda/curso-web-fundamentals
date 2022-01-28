@@ -1,0 +1,30 @@
+/* Seletor universal: se aplica a tudo*/
+* {
+  background: black;
+}
+
+/*Seletor de tipo: ele especifica uma tag*/
+body {
+  background: black;
+}
+
+/*Seletor por classe*/
+.fundo-preto {
+  background: black;
+}
+
+/*Seletor por ID*/
+#nome {
+  background: black;
+}
+
+/*Seletor por atributo*/
+[type="text"] {
+  background: black;
+}
+
+/*Seletor por pseudos: pseudo são ações ou interações e eventos do elemento. Exemplo a:hover*/
+/*trabalha em cima de condições quando for verdade*/
+:hover {
+  background: black;
+}
