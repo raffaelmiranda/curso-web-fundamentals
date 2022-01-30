@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HCode Web Dev</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -14,19 +15,19 @@
     <nav></nav>
   </header>
 
-  <section>
-    <div>
+  <section class="content-center">
+    <div class="text-center">
       <a href="https://hcode.com.br/" target="_blank"><img src="assets/images/hcode.png" alt="Logo Hcode"></a>
     </div>
-    <form action="/login" method="POST">
+    <form action="/login" method="POST" id="form-login">
       <div>
-        <input type="email" placeholder="Digite o seu e-mail" required>
+        <input type="email" id="email" placeholder="Digite o seu e-mail" required>
       </div>
       <div>
-        <input type="password" placeholder="Digite a senha" required>
+        <input type="password" id="password" placeholder="Digite a senha" required>
       </div>
       <div>
-        <button type="submit">Enviar</button>
+        <button id="btn-submit">Enviar</button>
       </div>
     </form>
   </section>
@@ -35,5 +36,6 @@
     <p>HCode Treinamentos</p>
   </footer>
 </body>
+<script src="assets/js/script.js"></script>
 
 </html>
