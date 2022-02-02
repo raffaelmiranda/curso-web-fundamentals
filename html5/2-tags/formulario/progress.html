@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tag progress</title>
-  </head>
-  <body>
-    <progress value="30" max="50"></progress>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tag progress</title>
+</head>
+
+<body>
+  <progress value="30" max="50"></progress>
+  <hr>
+  <section>
+    <h2>Andamento da tarefa</h2>
+    <input type="number" name="add" id="add" step="1" onchange="updateProgress(event)">
+    <p>Progresso:
+      <progress id="p" min="0" value="0" max="100">
+        <span>0</span>%
+      </progress>
+    </p>
+  </section>
+  <script>
+    var barraAndamento = document.getElementById('p');
+    function updateProgress(e) {
+      let valorAtual = document.getElementById('add').value;
+      barraAndamento.value = valorAtual;
+      barraAndamento.getElementsByTagName('span')[0].textContent = valorAtual;
+    }
+  </script>
+</body>
+
 </html>
