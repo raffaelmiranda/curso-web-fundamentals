@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Context menu</title>
+</head>
+
+<body>
+  <form name="exemplo">
+    <label>Nome base: <input name="nbase" type="text" contextmenu="menu-nome"></label>
+    <menu type="context" id="menu-nome">
+      <command label="Escolher randomicamente um nome" onclick="document.forms.exemplo.elements.nbase.value = escolherNome()">
+        <command label="Preencher demais campos" onclick="preencherCampos(document.forms.exemplo.elements.nbase.value)">
+    </menu>
+  </form>
+  <script>
+    function escolherNome() {
+      alert("Funcão escolherNome executado");
+    }
+    function preencherCampos(param) {
+      alert("Funcão preencherCampos executado");
+    }
+  </script>
+</body>
+
+</html>
