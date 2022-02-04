@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh; /*Viewport é o tamanho total do documento*/
+}
+.container {
+  width: 400px;
+  height: 400px;
+  background: blue;
+}
+/*
+Elemento é posicionado em relação ao viewport.
+Sempre fica na mesma posição, mesmo se a pagina é rolada.
+Propriedades top, bottom, left e rigth são aplicáveis*/
+.box {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  background: greenyellow;
+}

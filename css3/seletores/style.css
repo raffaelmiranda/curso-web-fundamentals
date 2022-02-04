@@ -4,27 +4,32 @@
 }
 
 /*Seletor de tipo: ele especifica uma tag*/
-body {
-  background: black;
+p {
+  background: red;
 }
 
 /*Seletor por classe*/
-.fundo-preto {
-  background: black;
+.fundo-branco {
+  width: 100px;
+  height: 100px;
+  background: white;
 }
 
 /*Seletor por ID*/
 #nome {
-  background: black;
+  width: 100px;
+  height: 100px;
+  background: rgb(23, 197, 168);
 }
 
 /*Seletor por atributo*/
 [type="text"] {
-  background: black;
+  background: rgb(217, 240, 12);
 }
 
 /*Seletor por pseudos: pseudo são ações ou interações e eventos do elemento. Exemplo a:hover*/
 /*trabalha em cima de condições quando for verdade*/
-:hover {
-  background: black;
+input:hover {
+  background: rgb(163, 26, 218);
+  color: white;
 }

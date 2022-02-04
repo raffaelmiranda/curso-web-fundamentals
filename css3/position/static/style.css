@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh; /*tamanho do documento*/
+}
+
+/*
+Static é valor padrão do position
+O elemento segue o fluxo da página
+As propriedades top, bottom, right e left não são aplicaveis*/
+.container {
+  position: static;
+  background: blue;
+}
+
+.box {
+  background: greenyellow;
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh; /*tamanho do documento*/
+}
+/*
+Sticky
+Elemento é posicionado em relação a posição do scroll do usuário.
+Propriedades top, bottom, left e right são aplicáveis
+*/
+.container {
+  margin-top: 20vh;
+  position: sticky;
+  top: 10px; /*Quando o a div chegar a 10px do top ele ficara fixo, enquanto é tiver barra de rolagem*/
+  width: 400px;
+  height: 400px;
+  background: blue;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: greenyellow;
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*O elemento é posicionado em relação ao seu elemento pai mais próximo que possui o position relative.
+Se o elemento não tiver nenhum elemento pai com position relative, é posicionado em relação ao body*/
+/*Elemento pai*/
+.container {
+  position: relative;
+  top: 60px;
+  width: 400px;
+  height: 400px;
+  border: 3px solid rgb(35, 146, 25);
+}
+/*Elemento filho 
+Os valores das propriedades top, right, bottom, e left são em relação ao elemento pai*/
+.box {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgb(0, 153, 255);
+}
